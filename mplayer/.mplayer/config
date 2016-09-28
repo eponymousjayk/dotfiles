@@ -1,0 +1,5 @@
+# Write your default config options here!
+
+ao=pulse
+vo=vdpau,
+vc=ffh264vdpau,ffmpeg12vdpau,ffwmv3vdpau,ffvc1vdpau,ffhevcvdpau

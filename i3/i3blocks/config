@@ -1,0 +1,60 @@
+command=/usr/lib/i3blocks/$BLOCK_NAME
+separator_block_width=15
+markup=none
+
+
+[title]
+align=left
+interval=1
+command=getWindowTitle -w 80
+
+[music]
+label=♪
+command=mpc current
+interval=5
+
+[memory]
+label=MEM
+separator=false
+interval=30
+
+[disk]
+label=HOME
+instance=/home/jayk
+interval=30
+separator=false
+
+[disk]
+label=AYE
+instance=/mnt/Aye
+interval=30
+separator=false
+
+[disk]
+label=ROOT
+instance=/
+interval=30
+
+[iface]
+color=#00FF00
+interval=10
+separator=false
+
+[wifi]
+interval=10
+separator=false
+
+[cpu_usage]
+label=CPU
+interval=10
+min_width=CPU: 100.00%
+
+# Date Time
+[time]
+command=date '+%b %d, %Y  | %I:%M:%S%P'
+interval=5
+
+[vpn]
+label=VPN: 
+command=locator
+interval=1

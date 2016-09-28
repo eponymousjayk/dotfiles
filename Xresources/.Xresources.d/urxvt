@@ -1,0 +1,17 @@
+#include "/home/jayk/.Xresources.d/urxvt.Xcolors"
+
+! Additional Configs
+URxvt.scrollBar: false
+URxvt.background: rgba:2800/2800/2800/ce00
+URxvt.depth: 32
+URxvt.font: xft:FuraMonoForPowerline Nerd Font:size=7
+URxvt.internalBorder: 10
+
+! Extensions
+URxvt.perl-ext-common:      default,clipboard,url-select,keyboard-select
+URxvt.url-select.launcher:  chromium
+URxvt.url-select.underline: true
+URxvt.keysym.M-u:           perl:url-select:select_next
+URxvt.keysym.M-Escape:      perl:keyboard-select:activate
+URxvt.keysym.M-s:           perl:keyboard-select:search
+

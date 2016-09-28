@@ -1,0 +1,51 @@
+sw_volume: 100
+audio_device_state:1:MPD
+audio_device_state:1:default
+audio_device_state:1:my_fifo
+state: pause
+current: 13
+time: 101.146000
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:Brand New/The Devil And God Are Raging Inside Me/01 Sowing Season.mp3
+1:Brand New/The Devil And God Are Raging Inside Me/02 Millstone.mp3
+2:Brand New/The Devil And God Are Raging Inside Me/03 Jesus.mp3
+3:Brand New/The Devil And God Are Raging Inside Me/04 Degausser.mp3
+4:Brand New/The Devil And God Are Raging Inside Me/05 Limousine (MS Rebridge).mp3
+5:Brand New/The Devil And God Are Raging Inside Me/06 You Won't Know.mp3
+6:Brand New/The Devil And God Are Raging Inside Me/07 Welcome To Bangkok.mp3
+7:Brand New/The Devil And God Are Raging Inside Me/08 Not The Sun.mp3
+8:Brand New/The Devil And God Are Raging Inside Me/09 Luca.mp3
+9:Brand New/The Devil And God Are Raging Inside Me/10 Untitled.mp3
+10:Brand New/The Devil And God Are Raging Inside Me/11 The Archers Bows Have Broken.mp3
+11:Brand New/The Devil And God Are Raging Inside Me/12 Handcuffs.mp3
+12:8-Bit Assassins/Sociopath/02.Divtech - Digicore.mp3
+13:Igorrr/Hallelujah/01. Tout Petit Moineau - Igorrr.flac
+14:Igorrr/Hallelujah/02. Damaged Wig - Igorrr.flac
+15:Igorrr/Hallelujah/03. Absolute Psalm - Igorrr.flac
+16:Igorrr/Hallelujah/04. Cicadidae - Igorrr.flac
+17:Igorrr/Hallelujah/05. Vegetable Soup - Igorrr.flac
+18:Igorrr/Hallelujah/06. Lullaby For A Fat Jellyfish - Igorrr.flac
+19:Igorrr/Hallelujah/07. Grosse Barbe - Igorrr.flac
+20:Igorrr/Hallelujah/08. Corpus Tristis - Igorrr.flac
+21:Igorrr/Hallelujah/09. Scarlatti 2.0 - Igorrr.flac
+22:Igorrr/Hallelujah/10. Toothpaste - Igorrr.flac
+23:Igorrr/Hallelujah/11. Infinite Loop - Igorrr.flac
+24:Venetian Snares/(2005) Rossz Csillag Alatt Született/Venetian Snares - Rossz Csillag Alatt Született - 01 - Sikertelenség.mp3
+25:Venetian Snares/(2005) Rossz Csillag Alatt Született/Venetian Snares - Rossz Csillag Alatt Született - 02 - Szerencsétlen.mp3
+26:Venetian Snares/(2005) Rossz Csillag Alatt Született/Venetian Snares - Rossz Csillag Alatt Született - 03 - Öngyilkos Vasárnap.mp3
+27:Venetian Snares/(2005) Rossz Csillag Alatt Született/Venetian Snares - Rossz Csillag Alatt Született - 04 - Felbomlasztott Mentökocsi.mp3
+28:Venetian Snares/(2005) Rossz Csillag Alatt Született/Venetian Snares - Rossz Csillag Alatt Született - 05 - Hajnal.mp3
+29:Venetian Snares/(2005) Rossz Csillag Alatt Született/Venetian Snares - Rossz Csillag Alatt Született - 06 - Galamb Egyedül.mp3
+30:Venetian Snares/(2005) Rossz Csillag Alatt Született/Venetian Snares - Rossz Csillag Alatt Született - 07 - Második Galamb.mp3
+31:Venetian Snares/(2005) Rossz Csillag Alatt Született/Venetian Snares - Rossz Csillag Alatt Született - 08 - Szamár Madár.mp3
+32:Venetian Snares/(2005) Rossz Csillag Alatt Született/Venetian Snares - Rossz Csillag Alatt Született - 09 - Hiszékeny.mp3
+33:Venetian Snares/(2005) Rossz Csillag Alatt Született/Venetian Snares - Rossz Csillag Alatt Született - 10 - Kétsarkü Mozgalom.mp3
+34:Venetian Snares/(2005) Rossz Csillag Alatt Született/Venetian Snares - Rossz Csillag Alatt Született - 11 - Senki Dala.mp3
+playlist_end
