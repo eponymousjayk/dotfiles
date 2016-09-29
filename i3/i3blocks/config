@@ -55,6 +55,7 @@ command=date '+%b %d, %Y  | %I:%M:%S%P'
 interval=5
 
 [vpn]
+align=left
 label=VPN: 
-command=locator
 interval=1
+command=locator
