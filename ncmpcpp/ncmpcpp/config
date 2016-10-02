@@ -1,6 +1,8 @@
+#!/usr/bin/env bash
+
 mpd_host = "localhost"
 mpd_port = "6600"
-mpd_music_dir = "/home/jayk/Music"
+mpd_music_dir = "~/Music"
 
 # fifo
 
