@@ -9,8 +9,12 @@ ranger/ranger/bookmarks
 ranger/ranger/tagged
 ranger/ranger/history
 vimperator/.vimperator/info/default
-i3/i3/.config.swo
-i3/i3/.config.swp
+i3/i3
+i3/i3blocks
+i3/i3status
+!i3/i3/config
+!i3/i3blocks/config
+!i3/i3status/config
 gtk/.config/gtk-3.0/bookmarks
 vim/.viminfo
 vim/.vim
