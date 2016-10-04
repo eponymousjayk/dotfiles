@@ -6,7 +6,7 @@ markup=none
 [title]
 align=left
 interval=1
-command=getWindowTitle -w 80
+command=getwindowtitle -w 80
 
 [music]
 label=♪

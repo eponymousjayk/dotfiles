@@ -98,7 +98,7 @@ mode "resize" {
         bindsym $down resize grow height 10 px or 10 ppt
         bindsym $up resize shrink height 10 px or 10 ppt
         bindsym $right resize grow width 10 px or 10 ppt
-        
+
         bindsym Shift+$left resize shrink width 5 px or 5 ppt
         bindsym Shift+$down resize grow height 5 px or 5 ppt
         bindsym Shift+$up resize shrink height 5 px or 5 ppt
@@ -115,7 +115,7 @@ bar {
         bindsym Button4 nop
         bindsym Button5 nop
         position top
-        status_command i3blocks 
+        status_command i3blocks
         strip_workspace_numbers yes
 }
 
@@ -133,4 +133,3 @@ for_window [title="^Volume Control$"] floating enable
 
 # transmission-gtk
 for_window [title="^Transmission$"] floating enable
-
