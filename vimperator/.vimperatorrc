@@ -7,3 +7,6 @@ set titlestring=Firefox
 
 nnoremap j 3<C-e>
 nnoremap k 3<C-y>
+
+: style -name ublock * #nav-bar * { visibility: visible; }
+: style -name ghostery * #nav-bar * { visibility: visible; }
