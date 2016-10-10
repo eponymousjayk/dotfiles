@@ -126,7 +126,6 @@ for_window [class="^.*"] border pixel 0
 gaps inner 10
 gaps outer 0
 
-
 # pulse
 bindsym $mod+p exec pavucontrol
 for_window [title="^Volume Control$"] floating enable

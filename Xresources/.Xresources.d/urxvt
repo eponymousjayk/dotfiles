@@ -1,4 +1,4 @@
-!#include "/home/jayk/.Xresources.d/urxvt.Xcolors"
+#include "/home/jayk/.Xresources.d/urxvt.Xcolors"
 
 ! Additional Configs
 URxvt.scrollBar: false
