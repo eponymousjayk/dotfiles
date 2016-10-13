@@ -1,8 +1,11 @@
+runtime! archlinux.vim
 set nocompatible
-filetype off
-call vundle#rc()
 
 set t_Co=256
+syntax enable
+filetype plugin on
+
+call vundle#rc()
 
 "filetype plugin indent on
 set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/after
@@ -10,20 +13,9 @@ set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/afte
 " Plugin includes
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'morhetz/gruvbox'
-
-syntax on
-
-" Gruv
-" colorscheme gruvbox
-" set background=dark
-" let g:gruvbox_contrast_dark="hard"
-
-set pastetoggle=<F2>
 
 " Search highlighting options
-set hlsearch
-set incsearch
+set hlsearch incsearch
 
 " numbers
 set number
@@ -56,9 +48,15 @@ set sidescrolloff=3
 " Indent
 set tabstop=3
 set shiftwidth=3
+set expandtab
+
 set backspace=indent,eol,start
 set autoindent
 set copyindent
+
+" Files
+set path+=**
+set wildmenu
 
 " Remaps
 map <Down> <nop>
@@ -70,3 +68,4 @@ nnoremap j gj
 nnoremap k gk
 
 let mapleader = ","
+set pastetoggle=<F2>
