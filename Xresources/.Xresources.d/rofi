@@ -1,11 +1,11 @@
 rofi.bw: 0
-rofi.width: 35
+rofi.width: 20
 rofi.lines: 6
 rofi.font: tewi 8
 rofi.opacity: 95
 
 rofi.color-enabled: true
-rofi.color-window: #3F3F3F, #000000
+rofi.color-window: #222222, #000000
 
 !                     bg,        fg,        bgalt,     hlbg,     hlfg
 rofi.color-normal:    #222222,   #D3DAE3,   #252A33,   #212121,  #3DDBA4
