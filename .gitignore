@@ -19,3 +19,4 @@ vim/.viminfo
 vim/.vim
 vim/.vim/bundle
 user-dirs/user-dirs.locale
+gtk/.config/gtk-2.0/gtkfilechooser.ini
