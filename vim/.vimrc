@@ -69,3 +69,7 @@ nnoremap k gk
 
 let mapleader = ","
 set pastetoggle=<F2>
+
+" GVIM
+set guioptions-=T
+set guioptions-=m
