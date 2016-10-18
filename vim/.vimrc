@@ -5,6 +5,8 @@ set t_Co=256
 syntax enable
 filetype plugin on
 
+set viminfo=
+
 call vundle#rc()
 
 "filetype plugin indent on
