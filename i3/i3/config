@@ -89,7 +89,9 @@ bindsym $mod+Shift+0 move container to workspace 10:0, workspace 10:0
 # reload the configuration file
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
+
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym Mod1+Shift+l exec "i3lock -c 131313"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {

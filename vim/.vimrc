@@ -5,8 +5,6 @@ set t_Co=256
 syntax enable
 filetype plugin on
 
-set viminfo=
-
 call vundle#rc()
 
 "filetype plugin indent on
@@ -59,6 +57,13 @@ set copyindent
 " Files
 set path+=**
 set wildmenu
+
+" Encrypt settings
+set viminfo=
+set noswapfile
+set cryptmethod=blowfish2
+set nobackup
+set nowritebackup
 
 " Remaps
 map <Down> <nop>
