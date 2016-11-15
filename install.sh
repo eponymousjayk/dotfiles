@@ -1,5 +1,12 @@
 #!/usr/bin/env zsh
 
+if [[ "$1" == "U" ]]; then
+   stow -D `ls | grep -v *.sh | grep -v *.md` -t "$HOME/.config"
+   stow -D `ls | grep -v *.sh | grep -v *.md` -t ~
+   exit
+fi
+
+
 # The install script uses stow
 if [ ! -f `where stow` ]; then
    echo "This install script depends on stow."
@@ -20,7 +27,6 @@ stow -t "$XDG_CONFIG_HOME" mpd
 stow -t "$XDG_CONFIG_HOME" ncmpcpp
 stow -t "$XDG_CONFIG_HOME" ranger
 stow -t "$XDG_CONFIG_HOME" termite
-stow -t "$XDG_CONFIG_HOME" user-dirs
 stow -t "$XDG_CONFIG_HOME" zathura
 stow -t ~ gtk
 stow -t ~ vim
