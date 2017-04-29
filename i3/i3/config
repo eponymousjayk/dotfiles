@@ -4,37 +4,35 @@ set $down j
 set $up k
 set $right l
 
-# Font for window titles. Will also be used by the bar unless a different font
-# is used in the bar {} block below.
-font pango:FuraMonoForPowerline 7
-
-# Use Mouse+$mod to drag floating windows to their wanted position
-floating_modifier $mod
+#font
+font pango:lucy tewi 7
 
 # start a terminal
-bindsym $mod+Return exec termite
+bindsym $mod+Return       exec termite
 bindsym $mod+Shift+Return exec termite -t "scratchpad"
-for_window [title="^scratchpad$"] floating enable, move position mouse
+for_window [title="^scratchpad$"] floating enable, move position mouse, resize set 640 480
 
+bindsym $mod+Shift+minus move to scratchpad
+bindsym $mod+minus scratchpad show
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec rofi -show run
+bindsym $mod+d       exec rofi -show run
 bindsym $mod+Shift+d exec rofi -show drun
 bindsym $mod+Shift+w exec rofplay
 
 # change focus
-bindsym $mod+$left focus left
-bindsym $mod+$down focus down
-bindsym $mod+$up focus up
+bindsym $mod+$left  focus left
+bindsym $mod+$down  focus down
+bindsym $mod+$up    focus up
 bindsym $mod+$right focus right
 
 # move focused window
-bindsym $mod+Shift+$left move left
-bindsym $mod+Shift+$down move down
-bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$left  move left
+bindsym $mod+Shift+$down  move down
+bindsym $mod+Shift+$up    move up
 bindsym $mod+Shift+$right move right
 
 # split
@@ -44,23 +42,11 @@ bindsym Mod1+v split v
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
-# change container layout (stacked, tabbed, toggle split)
-# bindsym $mod+s layout stacking
-# bindsym $mod+w layout tabbed
-# bindsym $mod+e layout toggle split
-
-# toggle tiling / floating
+# tiling / floating controls
 bindsym $mod+Shift+space floating toggle
-bindsym $mod+Shift+s sticky toggle
-
-# change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
-
-# focus the parent container
-bindsym $mod+a focus parent
-
-# focus the child container
-#bindsym $mod+d focus child
+bindsym $mod+Shift+s     sticky   toggle
+bindsym $mod+space       focus    mode_toggle
+floating_modifier $mod
 
 # switch to workspace
 bindsym $mod+1 workspace 1:1
@@ -75,15 +61,15 @@ bindsym $mod+9 workspace 9:9
 bindsym $mod+0 workspace 10:0
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 1:1, workspace 1:1
-bindsym $mod+Shift+2 move container to workspace 2:2, workspace 2:2
-bindsym $mod+Shift+3 move container to workspace 3:3, workspace 3:3
-bindsym $mod+Shift+4 move container to workspace 4:4, workspace 4:4
-bindsym $mod+Shift+5 move container to workspace 5:5, workspace 5:5
-bindsym $mod+Shift+6 move container to workspace 6:6, workspace 6:6
-bindsym $mod+Shift+7 move container to workspace 7:7, workspace 7:7
-bindsym $mod+Shift+8 move container to workspace 8:8, workspace 8:8
-bindsym $mod+Shift+9 move container to workspace 9:9, workspace 9:9
+bindsym $mod+Shift+1 move container to workspace 1:1,  workspace 1:1
+bindsym $mod+Shift+2 move container to workspace 2:2,  workspace 2:2
+bindsym $mod+Shift+3 move container to workspace 3:3,  workspace 3:3
+bindsym $mod+Shift+4 move container to workspace 4:4,  workspace 4:4
+bindsym $mod+Shift+5 move container to workspace 5:5,  workspace 5:5
+bindsym $mod+Shift+6 move container to workspace 6:6,  workspace 6:6
+bindsym $mod+Shift+7 move container to workspace 7:7,  workspace 7:7
+bindsym $mod+Shift+8 move container to workspace 8:8,  workspace 8:8
+bindsym $mod+Shift+9 move container to workspace 9:9,  workspace 9:9
 bindsym $mod+Shift+0 move container to workspace 10:0, workspace 10:0
 
 # reload the configuration file
@@ -96,17 +82,16 @@ bindsym Mod1+Shift+l exec "i3lock -c 131313"
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # Pressing down will grow the window’s height.
-        bindsym $left resize shrink width 10 px or 10 ppt
-        bindsym $down resize grow height 10 px or 10 ppt
-        bindsym $up resize shrink height 10 px or 10 ppt
-        bindsym $right resize grow width 10 px or 10 ppt
+        bindsym $left        resize shrink width  10 px or 10 ppt
+        bindsym $down        resize grow   height 10 px or 10 ppt
+        bindsym $up          resize shrink height 10 px or 10 ppt
+        bindsym $right       resize grow   width  10 px or 10 ppt
 
-        bindsym Shift+$left resize shrink width 5 px or 5 ppt
-        bindsym Shift+$down resize grow height 5 px or 5 ppt
-        bindsym Shift+$up resize shrink height 5 px or 5 ppt
-        bindsym Shift+$right resize grow width 5 px or 5 ppt
+        bindsym Shift+$left  resize shrink width  5 px or 5 ppt
+        bindsym Shift+$down  resize grow   height 5 px or 5 ppt
+        bindsym Shift+$up    resize shrink height 5 px or 5 ppt
+        bindsym Shift+$right resize grow   width  5 px or 5 ppt
 
-        # back to normal: Enter or Escape
         bindsym Return mode "default"
 }
 bindsym $mod+r mode "resize"
@@ -122,15 +107,31 @@ bar {
 }
 
 focus_follows_mouse no
+focus_on_window_activation none
 
 for_window [class="^.*"] border pixel 0
 
-gaps inner 10
 gaps outer 0
+gaps inner 10
 
 # pulse
 bindsym $mod+p exec pavucontrol
 for_window [title="^Volume Control$"] floating enable
 
+# alsa
+# bindsym $mod+p exec termite -t "alsamixer" -e alsamixer
+for_window [title="^alsamixer$"] floating enable
+
 # transmission-gtk
 for_window [title="^Transmission$"] floating enable
+
+# print
+bindsym           Print       exec --no-startup-id scrot     -q 100 "$HOME/%Y-%m-%d %H-%M-%S %z.png"
+bindsym --release Shift+Print exec --no-startup-id scrot  -s -q 100 "$HOME/%Y-%m-%d %H-%M-%S %z.png"
+
+# reset resolution
+bindsym           Shift+F11   exec --no-startup-id xrandr -s 1
+
+for_window [title="Oracle VM VirtualBox$"] floating enable
+
+

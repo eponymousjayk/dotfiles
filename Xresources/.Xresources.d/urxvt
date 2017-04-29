@@ -4,7 +4,7 @@
 URxvt.scrollBar: false
 URxvt.background: rgba:2800/2800/2800/ce00
 URxvt.depth: 32
-URxvt.font: xft:FuraMonoForPowerline Nerd Font:size=7
+URxvt.font: xft:lucy tewi:size=7
 URxvt.internalBorder: 10
 
 ! Extensions

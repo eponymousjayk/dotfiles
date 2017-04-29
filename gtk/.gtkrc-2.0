@@ -1,3 +1,4 @@
-gtk-theme-name = "Arc-Dark-Grey"
-gtk-font-name = "FuraMonoForPowerLine Nerd Font 8"
+gtk-theme-name = "Arc-Grey-Dark"
+gtk-font-name = "lucy tewi 7"
 gtk-icon-theme-name = "Archdroid-Cyan"
+#gtk-icon-theme-name = "Adwaita"

@@ -1,7 +1,7 @@
 rofi.bw: 0
 rofi.width: 20
 rofi.lines: 6
-rofi.font: tewi 8
+rofi.font: lucy tewi 8
 rofi.opacity: 95
 
 rofi.color-enabled: true

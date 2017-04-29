@@ -1,7 +1,9 @@
 set gui=nonavigation
 set scrollbars=false
+set focuscontent
 
 set complete=bs
+set nohlsearch
 
 set titlestring=Firefox
 
