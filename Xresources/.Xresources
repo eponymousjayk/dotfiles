@@ -1,2 +1,3 @@
 #include "/home/jayk/.Xresources.d/urxvt"
 #include "/home/jayk/.Xresources.d/rofi"
+#include "/home/jayk/.Xresources.d/i3wm"

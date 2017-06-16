@@ -41,11 +41,11 @@ interval=30
 
 [iface]
 color=#00FF00
-interval=10
+interval=5
 separator=false
 
 [wifi]
-interval=10
+interval=5
 separator=false
 
 [cpu_usage]

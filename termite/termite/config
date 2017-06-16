@@ -2,7 +2,7 @@
 font = lucy tewi 7
 cursor_blink = on
 cursor_shape = underline
-browser = firefox-developer
+browser = firefox
 allow_bold = true
 
 [colors]

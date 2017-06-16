@@ -1,17 +1,29 @@
+!! Includes
 #include "/home/jayk/.Xresources.d/urxvt.Xcolors"
 
-! Additional Configs
-URxvt.scrollBar: false
-URxvt.background: rgba:2800/2800/2800/ce00
-URxvt.depth: 32
-URxvt.font: xft:lucy tewi:size=7
-URxvt.internalBorder: 10
+!! Additional Configs
+URxvt.scrollBar:                false
+URxvt.background:               rgba:2800/2800/2800/ce00
+URxvt.buffered:                 true
+URxvt.cursorUnderline:          true
+URxvt.cursorBlink:              false
+URxvt.depth:                    32
+URxvt.font:                     xft:lucy tewi:size=7
+URxvt.internalBorder:           5
 
-! Extensions
-URxvt.perl-ext-common:      default,clipboard,url-select,keyboard-select
-URxvt.url-select.launcher:  chromium
-URxvt.url-select.underline: true
-URxvt.keysym.M-u:           perl:url-select:select_next
-URxvt.keysym.M-Escape:      perl:keyboard-select:activate
-URxvt.keysym.M-s:           perl:keyboard-select:search
+!! Extensions
+URxvt.perl-ext-common:          default,clipboard,url-select,keyboard-select
+
+! Copy
+URxvt.clipboard.autocopy:       true
+URxvt.keysym.Shift-Control-C:   perl:clipboard:copy
+URxvt.keysym.Shift-Control-V:   perl:clipboard:paste
+URxvt.iso14755:                 false
+
+! URLs
+URxvt.url-select.launcher:      firefox
+URxvt.url-select.underline:     true
+URxvt.keysym.M-u:               perl:url-select:select_next
+URxvt.keysym.M-Escape:          perl:keyboard-select:activate
+URxvt.keysym.M-s:               perl:keyboard-select:search
 

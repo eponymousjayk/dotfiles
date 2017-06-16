@@ -7,19 +7,23 @@ filetype plugin on
 
 call vundle#rc()
 
-"filetype plugin indent on
 set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/after
 
 " Plugin includes
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'dylanaraps/wal'
+colors wal
+" colors default
 
 " Search highlighting options
 set hlsearch incsearch
 
 " numbers
-set number
-set relativenumber
+if !exists("vimpager")
+   set number
+   set relativenumber
+endif
 
 " Highlight whitespace
 set list
@@ -27,6 +31,7 @@ set listchars=tab:>.,trail:.,extends:#,nbsp:.
 
 " Airline
 set laststatus=2
+let g:airline_theme='badcat'
 let g:airline_powerline_fonts = 1
 let g:airline_section_y = 'BN: %{bufnr("%")}'
 
@@ -46,8 +51,8 @@ set scrolloff=3
 set sidescrolloff=3
 
 " Indent
-set tabstop=3
-set shiftwidth=3
+set tabstop=4
+set shiftwidth=4
 set expandtab
 
 set backspace=indent,eol,start
@@ -77,6 +82,4 @@ nnoremap k gk
 let mapleader = ","
 set pastetoggle=<F2>
 
-" GVIM
-set guioptions-=T
-set guioptions-=m
+let vimpager_passthrough = 0

@@ -4,12 +4,27 @@ set $down j
 set $up k
 set $right l
 
+#colors
+set_from_resource $fg i3wm.color7 #f0f0f0
+set_from_resource $bg i3wm.color2 #f0f0f0
+
+# class                 border  backgr. text indicator child_border
+client.focused          $bg     $bg     $fg  $bg       $bg
+client.focused_inactive $bg     $bg     $fg  $bg       $bg
+client.unfocused        $bg     $bg     $fg  $bg       $bg
+client.urgent           $bg     $bg     $fg  $bg       $bg
+client.placeholder      $bg     $bg     $fg  $bg       $bg
+
+client.background       $bg
+
 #font
 font pango:lucy tewi 7
 
 # start a terminal
-bindsym $mod+Return       exec termite
-bindsym $mod+Shift+Return exec termite -t "scratchpad"
+#bindsym $mod+Return       exec termite
+#bindsym $mod+Shift+Return exec termite -t "scratchpad"
+bindsym $mod+Return       exec urxvt
+bindsym $mod+Shift+Return exec urxvt -T "scratchpad"
 for_window [title="^scratchpad$"] floating enable, move position mouse, resize set 640 480
 
 bindsym $mod+Shift+minus move to scratchpad
@@ -98,18 +113,24 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        bindsym Button4 nop
-        bindsym Button5 nop
-        position top
-        status_command i3blocks
-        strip_workspace_numbers yes
-}
+
+
+
+# bar {
+#        bindsym Button4 nop
+#        bindsym Button5 nop
+#        position top
+#        status_command i3blocks
+#        strip_workspace_numbers yes
+# }
+
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 focus_follows_mouse no
 focus_on_window_activation none
 
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 1
+new_window pixel 0
 
 gaps outer 0
 gaps inner 10
@@ -133,5 +154,4 @@ bindsym --release Shift+Print exec --no-startup-id scrot  -s -q 100 "$HOME/%Y-%m
 bindsym           Shift+F11   exec --no-startup-id xrandr -s 1
 
 for_window [title="Oracle VM VirtualBox$"] floating enable
-
-
+for_window [title="^Nitrogen$"] floating enable, resize set 480 320

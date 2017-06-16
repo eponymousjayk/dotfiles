@@ -1,3 +1,6 @@
 VteTerminal, vte-terminal {
-   padding: 10px;
+   padding-top: 5px;
+   padding-left: 5px;
+   padding-right: 5px;
+   padding-bottom: 0px;
 }
